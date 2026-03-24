@@ -2,7 +2,7 @@ const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
-const API_KEY = "";
+const param = "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"; 
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
 const conversationHistory = [];
@@ -46,7 +46,7 @@ async function callGroqAPI(prompt) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer " + API_KEY
+        "Authorization": "Bearer " + param
       },
       body: JSON.stringify({
         model: "llama-3.3-70b-versatile",
