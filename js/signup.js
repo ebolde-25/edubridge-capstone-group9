@@ -14,5 +14,5 @@ document.querySelector("form").addEventListener("submit", function (e) {
   localStorage.setItem("username", username);
   localStorage.setItem("fullname", fullname);
 
-  window.location.href = "onboarding.html";
+  window.location.assign(`${window.location.hostname}/onboarding.html`);
 });
