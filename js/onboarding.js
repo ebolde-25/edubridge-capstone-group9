@@ -208,5 +208,5 @@ function showOnboardingResult() {
 
 // ---- Go to Dashboard ----
 function goToDashboard() {
-  window.location.href = "dashboard.html";
+  window.location.assign(`dashboard.html`);
 }
