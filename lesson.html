@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson - EduBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-layout">
+
+    <!-- Left Image -->
+    <div class="page-banner">
+      <img src="assets/edubridge_robot.png " alt="EduBridge" style="border-radius:12px;">
+    </div>
+
+    <!-- Right Content -->
+    <div class="page-content">
+
+      <header class="topbar" style="text-align: center; background-color:#4f46ed;">
+        <span >Lesson Page</span>
+      </header>
+
+      <div class="lesson-container">
+
+        <!-- Level Selector -->
+        <div class="level-selector">
+          <button class="level-btn" id="btn-beginner"
+            onclick="selectLevel('beginner')">Beginner</button>
+          <button class="level-btn" id="btn-intermediate"
+            onclick="selectLevel('intermediate')">Intermediate</button>
+          <button class="level-btn" id="btn-advanced"
+            onclick="selectLevel('advanced')">Advanced</button>
+        </div>
+
+        <!-- Lesson Section -->
+        <div id="lesson-section" class="lesson-card">
+          <span id="level-label" class="level-tag">Beginner</span>
+          <h2 id="topic-title"></h2>
+          <p id="lesson-content"></p>
+          <p id="lesson-example" class="lesson-example"></p>
+          <button class="btn-primary" onclick="startQuiz()">Take Quiz →</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="lesson-card" style="display:none;">
+
+          <!-- Quiz Progress Bar -->
+          <div class="onboarding-progress-bar">
+            <div class="onboarding-progress-fill" id="quiz-progress-fill"></div>
+          </div>
+
+          <span id="question-count" class="level-tag"></span>
+          <h3 id="question-text"></h3>
+          <input type="text" id="answer-input" placeholder="Type your answer here...">
+          <p id="answer-feedback"></p>
+          <button class="btn-primary" id="submit-btn" onclick="submitAnswer()">Submit</button>
+
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-section" class="lesson-card" style="display:none;">
+          <span class="level-tag">Quiz Complete! 🎉</span>
+          <h3 id="result-score"></h3>
+          <p id="result-message"></p>
+          <div class="result-actions">
+            <button class="btn-primary" id="next-btn" onclick="nextTopic()">Next Lesson →</button>
+            <a class="btn-secondary" href="dashboard.html">Back to Dashboard</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/lesson.js"></script>
+</body>
+</html>

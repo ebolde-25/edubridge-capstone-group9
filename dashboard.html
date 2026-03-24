@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EduBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- Page Title -->
+    <h1>Your Progress</h1>
+    <p class="dashboard-subtitle">Keep up the great work!</p>
+
+    <!-- Level Badge -->
+    <span id="user-level-badge" class="level-tag"></span>
+
+    <!-- Stat Cards -->
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <span class="stat-icon">📈</span>
+        <h2 id="lessons-done">0</h2>
+        <p>Lessons Done</p>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🎯</span>
+        <h2 id="quiz-score">0%</h2>
+        <p>Quiz Score</p>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🕐</span>
+        <h2 id="time-spent">0m</h2>
+        <p>Time Spent</p>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-icon">🏅</span>
+        <h2 id="badges">0</h2>
+        <p>Badges</p>
+      </div>
+
+    </div>
+
+    <!-- This Week -->
+    <div class="week-card">
+      <h3>This Week</h3>
+      <!-- Bars are generated dynamically by dashboard.js -->
+      <div class="week-chart"></div>
+    </div>
+
+    <!-- By Subject -->
+    <div class="subject-section">
+      <h3>By Subject</h3>
+
+      <!-- Mathematics — Active -->
+      <div class="subject-item">
+        <div class="subject-header">
+          <span class="subject-icon">🔢</span>
+          <span class="subject-name">Mathematics</span>
+          <span class="subject-percent">0%</span>
+        </div>
+        <div class="subject-bar">
+          <div class="subject-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- English — Coming Soon -->
+      <div class="subject-item subject-locked">
+        <div class="subject-header">
+          <span class="subject-icon">🌐</span>
+          <span class="subject-name">English</span>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+        <div class="subject-bar">
+          <div class="subject-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Physics — Coming Soon -->
+      <div class="subject-item subject-locked">
+        <div class="subject-header">
+          <span class="subject-icon">⚛️</span>
+          <span class="subject-name">Physics</span>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+        <div class="subject-bar">
+          <div class="subject-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Chemistry — Coming Soon -->
+      <div class="subject-item subject-locked">
+        <div class="subject-header">
+          <span class="subject-icon">🧪</span>
+          <span class="subject-name">Chemistry</span>
+          <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+        <div class="subject-bar">
+          <div class="subject-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <a class="btn-primary" href="lesson.html">Start Learning</a>
+    <a class="btn-secondary" href="chatbot.html">Go to AI Tutor</a>
+
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

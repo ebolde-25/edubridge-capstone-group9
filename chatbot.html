@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Screen - EduBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <span>Chatbot Screen</span>
+  </header>
+
+  <div class="chatbot-layout">
+
+    <!-- Left: Image Panel -->
+    <div class="chatbot-banner">
+      <img src="assets/chatbox.png" alt="AI Chatbox">
+    </div>
+
+    <!-- Right: Chat Panel -->
+    <div class="chatbot-panel">
+
+      <h1>Chatbot</h1>
+      <hr>
+
+      <!-- Messages -->
+      <div id="chat-box"></div>
+
+      <hr>
+
+      <!-- Input -->
+      <div class="chat-input">
+        <input id="user-input" type="text" placeholder="Type a message...">
+        <button id="send-btn" class="btn-primary">Send</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

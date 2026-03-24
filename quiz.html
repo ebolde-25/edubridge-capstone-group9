@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - EduBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-layout">
+
+    <!-- Left Image -->
+    <div class="page-banner">
+      <img src="assets/edubridge_robot.png" alt="EduBridge" style="border-radius:12px;">
+    </div>
+
+    <!-- Right Content -->
+    <div class="page-content">
+      <div class="container">
+        <div class="card">
+
+          <!-- Quiz Header -->
+          <div class="quiz-header">
+            <span class="quiz-subject">Mathematics</span>
+            <span class="quiz-counter">Question <span id="current-q">1</span> of <span id="total-q">5</span></span>
+          </div>
+
+          <!-- Question -->
+          <p class="question" id="question-text">What is the capital of France?</p>
+
+          <!-- Options -->
+          <form class="quiz-form" id="quiz-form">
+
+            <label class="option">
+              <input type="radio" name="answer" value="a" required>
+              <span id="option-a">Option A</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="answer" value="b">
+              <span id="option-b">Option B</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="answer" value="c">
+              <span id="option-c">Option C</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="answer" value="d">
+              <span id="option-d">Option D</span>
+            </label>
+
+            <button type="submit" class="btn-primary">Next</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

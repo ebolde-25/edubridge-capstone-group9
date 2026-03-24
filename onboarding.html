@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - EduBridge</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-layout">
+
+    <!-- Left Image -->
+    <div class="page-banner">
+      <img src="assets/edubridge_robot.png" alt="EduBridge">
+    </div>
+
+    <!-- Right Content -->
+    <div class="page-content">
+      <div class="container">
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="card">
+          <span class="level-tag">Welcome to EduBridge 👋</span>
+          <h2>Let's find your level</h2>
+          <p>We'll ask you a few quick math questions to personalise your learning path. There's no pressure, just answer as best you can!</p>
+          <p class="lesson-example">⏱ Takes about 2 minutes · 10 questions</p>
+          <button class="btn-primary" onclick="startOnboarding()">Start Assessment</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="card" style="display:none;">
+          <div class="onboarding-progress-bar">
+            <div class="onboarding-progress-fill" id="onboarding-progress-fill"></div>
+          </div>
+          <span id="onboarding-question-count" class="level-tag"></span>
+          <h3 id="onboarding-question-text"></h3>
+          <div id="onboarding-options" class="quiz-options"></div>
+          <p id="onboarding-feedback" class="onboarding-feedback"></p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="card" style="display:none;">
+          <span class="level-tag">Assessment Complete 🎉</span>
+          <h2 id="assigned-level-title"></h2>
+          <p id="assigned-level-desc"></p>
+          <p class="lesson-example" id="assigned-score"></p>
+          <button class="btn-primary" onclick="goToDashboard()">Go to My Dashboard →</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/onboarding.js"></script>
+</body>
+</html>
